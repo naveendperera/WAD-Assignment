@@ -80,66 +80,74 @@ a:focus {
 /**********************************/
 .navbar {
     position: relative;
-    right: 0px;
     transition: .5s;
     z-index: 999;
 }
 
 .navbar.nav-sticky {
-    
+    position: fixed;
     top: 0;
-    right: 0px;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     transition: .5s;
 }
 
 .navbar .navbar-brand {
-    position: absolute;
-    float: left;
-    right: 0px;
     margin: 0;
-    left: 200px;
+    left: 200p;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 0px;
     font-weight: 200;
     text-transform: uppercase;
-    text-decoration: inline-block;
-    
+}
+.navbar-brand #donation.lk{
+    position: absolute;
+    margin: 0;
+    padding-right: 5000px;
 }
 
 .navbar .navbar-brand img {
     max-width: 100%;
-    right: 0px;
     max-height: 40px;
 }
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    float: left;
+.navbar-dark .navbar-nav .nav-link.active,
+{
     padding: 10px 10px 8px 10px;
-    color: #ffffff;
     
+    text-align: inline;
+    color: #ffffff;
+}
+.navbar-dark .navbar-nav button #post-ad {
+    position: absolute;
+    padding: 100px;
+}
+
+.navbar-nav{
+    padding-left: 372px;
+}
+
+#post-ad{
+    padding-top: 0px ;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #0796fe;
-   float: left;
     transition: none;
+    
 }
-
 
 
 @media (min-width: 992px) {
     .navbar {
         position: absolute;
         width: 100%;
-        top: 0px;
-        right: 0px;
+        top: 35px;
         padding: 20px 60px;
         background: rgba(9, 42, 73, .2)!important;
         z-index: 9;
@@ -147,20 +155,17 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        right: 0px;
         background: #092a49 !important;
     }
     
     .page .navbar {
         background: #092a49 !important;
-        right: 0px;
     }
     
     .navbar a.nav-link {
         padding: 8px 15px;
         font-size: 14px;
         letter-spacing: 1px;
-        right: 50px;
         text-transform: uppercase;
     }
 }
@@ -168,27 +173,17 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        right: 0px;
         background: #092a49 !important;
     }
     
     .navbar a.nav-link {
         padding: 5px;
-        right: 0px;
     }
     
     .navbar .dropdown-menu {
         box-shadow: none;
-        right: 0px;
     }
 }
-
-
-
-
-
-
-
 
 /**********************************/
 /*********** Search Bar CSS **********/
@@ -196,28 +191,268 @@ a:focus {
 
 .Search-Bar{
     position: relative;
-    z-index: 1;
-    top: 100px;
+    z-index: 50;
+    top: 130px;
 }
 .Search-Bar1{
     position: absolute;
-    ;
     top: 0px;
-    width: 80%;
+    width: 100%;
 }
-#Category{
-    
-    padding: 0 50px 0 0 ;
+.Search-Bar1{
+    margin: 0px 0px 0px 0px;
+    padding: 0 0px 0 0 ;
 }
-.d-flex{
-    width: 80%;
+
+.d-flex {
+    position: relative;
+    top: 6.5px;
+    width: 70%;
     float: right;
+    margin: 0px 130px 0px 0px;
+    padding-left: 150px;
+    
     
 }
 .d-flex button{
     background-color: #062847;
     align-items: center;
 }
+#Category #Category1{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+#Category {
+    padding-left: 120px;
+}
+
+#Category2 #Category3{
+    
+    width: 130px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+}
+#Category:hover,{
+    color: #0796fe;
+}
+
+
+
+/**********************************/
+/******** Header Carousel *********/
+/**********************************/
+#header-carousel {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+#header-carousel .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header-carousel .carousel-item::before {
+    content: '';
+    background: rgba(63, 105, 170, .5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#header-carousel .carousel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header-carousel .carousel-background img {
+    max-width: 100%;
+}
+
+#header-carousel .carousel-content {
+    max-width: 70%;
+    text-align: center;
+    position: relative;
+    padding-top: 200px;
+}
+
+#header-carousel h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#header-carousel p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#header-carousel .carousel-control-prev,
+#header-carousel .carousel-control-next {
+    width: 10%;
+}
+
+#header-carousel .carousel-control-next-icon,
+#header-carousel .carousel-control-prev-icon {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    background: #3F69AA;
+    font-size: 32px;
+    line-height: 1;
+}
+
+#header-carousel .carousel-control-next-icon {
+    border-radius: 50px 0 0 50px;
+}
+
+#header-carousel .carousel-control-prev-icon {
+    border-radius: 0 50px 50px 0;
+}
+
+#header-carousel .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#header-carousel .btn-get-started {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #3F69AA;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+#header-carousel .btn-get-started:hover {
+    background: #3F69AA;
+    color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+    #header-carousel .carousel-content {
+        max-width: 70%;
+    }
+
+    #header-carousel h2 {
+        margin-bottom: 15px;
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    #header-carousel p {
+        margin: 0 auto 15px auto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    #header-carousel .btn-get-started {
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #header-carousel .carousel-content {
+        max-width: 80%;
+    }
+
+    #header-carousel h2 {
+        margin-bottom: 15px;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    #header-carousel p {
+        margin: 0 auto 15px auto;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    #header-carousel .btn-get-started {
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #header-carousel .carousel-content {
+        max-width: 90%;
+    }
+
+    #header-carousel h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    #header-carousel p {
+        margin: 0 auto 15px auto;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    #header-carousel .btn-get-started {
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+
+
+
 
 /*******************************/
 /********** About CSS **********/
@@ -540,11 +775,11 @@ a:focus {
 }
 
 .footer .copyright {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .footer .copyright .row {
-    padding-top: 25px;
+    padding-top: 10px;
     padding-bottom: 25px;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
@@ -568,7 +803,8 @@ a:focus {
 
 .footer .container img {
     margin-top: 0px;
-    padding-left: 51px;
+    
+    padding-left: 108px;
     width: 300px;
     cursor: pointer;
     
