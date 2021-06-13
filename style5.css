@@ -17,8 +17,8 @@
 	top: 80px;
     padding: 50px;
 	color: white;
-	 font-size: 50px;
-	 font-weight: 100;
+	font-size: 50px;
+	font-weight: 100;
 	
 
 }
@@ -28,7 +28,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.4);
+	background: black;
 }
 .navbar .logo{
 	width: 140px;
@@ -61,8 +61,10 @@
 .boxes{
 	position: absolute;
 	top: 50vh;
-	width: 100%;
+	width: 80%;
 	height: 50vh;
+	padding-left: 400px;
+	
 }
 .box{
  	display: inline-block;
@@ -71,6 +73,26 @@
 	margin: 1%;
 	height: 30vh;
 	overflow: hidden;
+    
+} 
+
+.box8{
+ 	display: inline-block;
+	width: 96.5%;
+	background-color: rgba(8, 171, 221, 0.945);
+	margin: 1%;
+	height: 30vh;
+	overflow: hidden;
+    
+}
+.box9{
+ 	display: inline-block;
+	width: 96.5%;
+	background-color: rgba(8, 171, 221, 0.945);
+	margin: 1%;
+	height: 30vh;
+	overflow: hidden;
+    
 }
 .center{
 	font-family: sans-serif;
@@ -82,7 +104,11 @@
 	color: Black;
 	font-size: 50px;
 	font-weight: bold;
-	padding-left: 120px;
+	text-align: center;
 }
 .center p{
+	text-align: center;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
 }
