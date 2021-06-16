@@ -31,7 +31,7 @@
 </head>
         
         <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark" id="Nav-Bar">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand" id="donation.lk">DONATION.LK</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -40,13 +40,13 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="feature.html" class="nav-item nav-link">My account</a>
-                        <button type="button" class="btn btn" id="post-ad"> <a href="#" class="btn btn-warning" role="button">POST DONATION</a> </button>
+                        <a href="index.html" class="nav-item nav-link" id="Home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" id="About">About</a>
+                        <a href="service.html" class="nav-item nav-link" id="Service">Service</a>
+                        <a href="feature.html" class="nav-item nav-link" id="My-account">My account</a>
+                        <a href="#" class="btn btn-warning nav-link" role="button" id="post-ad">POST DONATION</a> 
                         
-                        <a href="contact.html" class="nav-item nav-link">Help & Contact</a>
+                        <a href="contact.html" class="nav-item nav-link " id="help">Help & Contact</a>
                     </div>
                 </div>
             </div>
@@ -142,9 +142,6 @@
             </div>
             <!-- Header carousel End-->
 
-
-
-
     <!--<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -191,20 +188,6 @@
     </div>
 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <br>
     <br>
     <!-- Catogry Start -->
@@ -218,7 +201,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-1.png" alt="Icon">
+                        <img src="img/icon-1.png" class="img-fluid" alt="Icon">
                         <h3>Education</h3>
                         <p>
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
@@ -306,9 +289,7 @@
     </div>
     <!-- Category End -->
 
-    <br>
-    <br>
-
+    
     <!-- About Start -->
     <div class="about">
         <div class="container">
@@ -317,10 +298,10 @@
 
                     <div class="about-img">
                         <div class="about-img-1">
-                            <img src="img/product-generic-donation.png" alt="Image">
+                            <img src="img/efgsdgzg.png" alt="Image">
                         </div>
                         <div class="about-img-2">
-                            <img src="img/220px-NHS_Organ_Donor_Card.png" alt="">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
@@ -355,41 +336,102 @@
         </div>
     </div>
     <!-- About End -->
-    <br>
-    <br>
-    <!-- Fact Start -->
-    <div class="fact">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="fact-item">
-                        <img src="img/icon-8.png" alt="Icon">
-                        <h2>Qualified Team</h2>
+    
+            <!-- About Us Start  222222-->
+            <div id="about">
+                <div class="container-fluid">
+                    <div class="section-header">
+                        <h2>Welcome to Our Website</h2><br>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="welcome m-auto">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Consequat mauris non interdum cursus, eros massa faucibus diam, in sodales quam ligula in est. Nullam ultrices turpis ut justo mollis tempus. Aliquam et tortor at quam laoreet condimentum ac nec leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis lacus tellus, eget fringilla enim feugiat in. Maecenas nec euismod lectus, nec congue eros. Nulla amet bibendum ut, fringilla sit amet est.
+                                </p>
+                                <a class="btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 about-col">
+                            <div class="about-content">
+                                <i class="fa fa-history"></i>
+                                <h2>Our Story</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat, mauris non interdum cursus, eros massa faucibus diam, in sodales quam ligula in est
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 about-col">
+                            <div class="about-content">
+                                <i class="fa fa-bullseye"></i>
+                                <h2>Our Mission</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat, mauris non interdum cursus, eros massa faucibus diam, in sodales quam ligula in est
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 about-col">
+                            <div class="about-content">
+                                <i class="fa fa-eye"></i>
+                                <h2>Our Vision</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat, mauris non interdum cursus, eros massa faucibus diam, in sodales quam ligula in est
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fact-item">
-                        <img src="img/icon-1.png" alt="Icon">
-                        <h2>Individual Approach</h2>
-                    </div>
+            </div>
+            <!-- About Us End-->
+
+
+             <!-- Services Start 2222-->
+        <div id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2></h2>
+                    <p>
+                        
+                    </p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fact-item">
-                        <img src="img/icon-8.png" alt="Icon">
-                        <h2>100% Success</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-col">
+                            <div class="service-icon"><i class="fa fa-television"></i></div>
+                            <h3>Lorem ipsum</h3>
+                            <div class="service-detail">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat mauris non
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fact-item">
-                        <img src="img/icon-6.png" alt="Icon">
-                        <h2>100% Satisfaction</h2>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-col">
+                            <div class="service-icon"><i class="fa fa-laptop"></i> </div>
+                            <h3>Lorem ipsum</h3>
+                            <div class="service-detail">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat mauris non
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-col">
+                            <div class="service-icon"><i class="fa fa-cog"></i> </div>
+                            <h3>Lorem ipsum</h3>
+                            <div class="service-detail">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat mauris non
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fact Start -->
-    
+        <!-- Services End -->
+
     <!-- Footer Start -->
     <div class="footer">
         <div class="container">
