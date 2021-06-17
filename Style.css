@@ -88,9 +88,9 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 60px 5px rgba(10, 50, 124, 0.3);
     transition: 0.5s;
     background-color: #062847;
+    background: rgb(9 42 73 / 50%)!important;
 }
 
 .navbar.nav-sticky {
@@ -110,14 +110,34 @@ a:focus {
     line-height: 0px;
     font-weight: 200;
     text-transform: uppercase;
+    
 }
 
 #Nav-Bar #navbarCollapse a{
     
-
-    font-weight: 600;
-    font-size: 15px;
-    color: ;
+font-weight: 600;
+    
+font-size: 15px;
+    
+box-sizing: border-box;
+    
+display: inline-block;
+    
+line-height: 44px;
+    
+float: left;
+    
+padding: 0 15px;
+    
+color: #fff;
+    
+font-weight: 600;
+    
+transition: ease-out 0.5s;
+    
+-webkit-transition: ease-out 0.5s;
+    
+-moz-transition: ease-out 0.5s;
 }
 
 #Nav-Bar #navbarCollapse #post-ad a{
@@ -153,10 +173,31 @@ a:focus {
     padding: 100px;
 }
 
+#navbarCollapse {
+    
+display: inline-block!important;
+}
 .navbar-nav{
-    padding-left: 372px;
+    /* padding-left: 372px; */
+    float: right;
+    display: inline-block;
+    margin: 0;
+    /* width: 100%; */
+    margin-right: unset!important;
+    margin-left: unset!important;
+    position: relative;
+}
+.navbar-nav li {
+    
+display: inline-block;
+    
+float: left;
 }
 
+.navbar-nav li:hover a {color: #0796fe!important;font-weight: 600!important;}
+.navbar-nav li a {
+    
+}
 #post-ad{
     padding-top: 0px ;
 }
@@ -195,7 +236,7 @@ a:focus {
         position: absolute;
         width: 100%;
         top: 35px;
-        padding: 20px 60px;
+        padding: 20px 0;
         background: rgba(9, 42, 73, .2)!important;
         z-index: 9;
     }
@@ -232,8 +273,50 @@ a:focus {
     }
 }
 
-/****************************************** Search Bar CSS *****************************************/
+@media (max-width: 991px) {
+ 
+ #navbarCollapse {
+     display: none!important;
+     position: absolute;
+     max-width: 300px;
+     width: 100%;
+     right: 0;
+     top: 55px;
+     background: rgb(9 42 73 / 50%)!important;
+ }
 
+  #navbarCollapse.show {
+     display: inline-block!important;
+ }
+
+ .navbar .container{
+     position:relative;
+ }
+
+
+  #navbarCollapse .navbar-nav {
+    padding: 0 20px;
+}
+
+  #navbarCollapse .navbar-nav li{  
+    width: 100%;
+    border-bottom: 1px solid #ffffff0d;   
+    padding: 5px 0;
+ }
+
+  #navbarCollapse .navbar-nav li a { 
+    padding: 0 15px!important; 
+    line-height: 34px!important;
+ }
+
+ #navbarCollapse .navbar-nav li:last-child {
+     border-bottom:0;
+ }
+ 
+}
+
+/****************************************** Search Bar CSS *****************************************/
+/*
 .Search-Bar{
     position: relative;
     position: fixed;
@@ -293,9 +376,8 @@ a:focus {
     font-size: 16px;
     font-weight: 600;
 }
-
-}
-#Category:hover,{
+ 
+#Category:hover{
     color: #0796fe;
 }
 
@@ -508,7 +590,8 @@ a:focus {
     position: relative;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    background-color: #057de61c;
 }
 
 .about .section-header {
@@ -519,7 +602,7 @@ a:focus {
 .about .about-img {
     position: relative;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
     height: 100%;
     overflow: hidden;
     transition: .5s;
@@ -535,10 +618,6 @@ a:focus {
     left: 60px;
     background: transparent;
     z-index: 1;
-}
-
-.about .about-img:hover::after {
-    
 }
 
 .about .about-img-1 {
@@ -585,13 +664,13 @@ a:focus {
     background: #3F69AA;
 }
 #Donate-now #Donate-now1 {
-    padding: 10px 30px 12px 30px;
+    padding: 10px 30px 10px 30px;
     text-align: center; 
     font-size: 25px;
     font-weight: 600;
-    width: 300px;
-    height: 60px;
-    padding-top: 12px;
+    width: 250px;
+    height: 50px;
+    padding-top: 5px;
     color: #ffffff;
     background: #E81C2E;
     border: none;
@@ -622,8 +701,32 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 0px 0 0px 0;
+    padding: 30px 0px 30px 0px;
 }
+
+.service .section-header h2 {
+    
+    text-align: center;
+}
+
+.service .section-header h2 {
+    position: relative;
+    color: #3F69AA;
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.service .section-header h2:after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 4px;
+    bottom: -3px;
+    left: calc(050% - 025px);
+    background: #3F69AA;
+ }
+
 
 .service .service-item {
     position: relative;
@@ -631,8 +734,7 @@ a:focus {
     margin-bottom: 30px;
     padding: 30px;
     text-align: center;
-    border-radius: 2px
-    transition: .3s;
+    border-radius: 2px 
 }
 
 .service .service-item:hover {
@@ -641,8 +743,10 @@ a:focus {
 }
 
 .service .service-item img {
-    max-height: 50px;
+    max-height: 68px;
     margin-bottom: 20px;
+    height: 80px;
+    text-decoration: none;
 }
 
 .service .service-item h3 {
@@ -663,7 +767,7 @@ a:focus {
     color: #0796fe;
     transition: .3s;
 }
-
+/*
 .service .service-item a::after {
     content: "";
     position: absolute;
@@ -672,7 +776,7 @@ a:focus {
     bottom: -3px;
     left: 10%;
     background: #0796fe;
-}
+}*/
 
 .service .service-item:hover a.btn {
     color: #092a49;
@@ -684,7 +788,7 @@ a:focus {
 
 #about {
     position: relative;
-    padding: 0px 0 0 0;
+    padding: 50px 0 0 0;
     margin-bottom: -30px;
 }
 
@@ -718,7 +822,7 @@ a:focus {
     content: "";
     width: 50px;
     height: 4px;
-    top: 50px;
+    bottom: -5px;
     left: calc(050% - 025px);
     background: #3F69AA;
 }
@@ -791,7 +895,7 @@ a:focus {
     overflow: hidden;
     margin-bottom: 0px;
     background: #f1f1f1;
-    border-radius: 80px 5px 5px 80px;
+    border-radius: 80px 25px 25px 80px;
 }
 
 #services .service-detail {
@@ -801,16 +905,23 @@ a:focus {
     top: 0;
     left: -100%;
     background: rgba(63, 105, 170, .92);
-    padding: 5px 5px 5px 30px;
+    padding: 5px 5px 5px 85px;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
     line-height: 23px;
+    border-radius: 80px 25px 25px 80px;
+    transition: ease-out 0.5s;    
+-webkit-transition: ease-out 0.5s;    
+-moz-transition: ease-out 0.5s;
+    /* left: 0; */
+    transition-delay: .2s;
 }
 
 #services .service-col:hover .service-detail {
-    transition: .5s;
+    /* transition: .5s; */
     left: 0;
+    /* transition-delay: .2s; */
 }
 
 #services .service-icon {
@@ -824,6 +935,8 @@ a:focus {
     padding: 16px 0;
     border: 3px solid #3F69AA;
     border-radius: 80px;
+    z-index: 100;
+    background: #f1f1f1;
 }
 
 #services .service-icon i {
@@ -977,8 +1090,7 @@ a:focus {
     padding: 8px 20px;
     font-size: 14px;
     font-weight: 600;
-    color: #3F69AA;
-    background color: #fff;
+    color: #3F69AA; 
     border-radius: 50px;
     border: 2px solid #3F69AA;
     transition: .3s;
@@ -1018,20 +1130,32 @@ a:focus {
 
 .footer .container img {
     margin-top: 0px;
-    
-    padding-left: 108px;
-    width: 300px;
-    cursor: pointer;   
+    /* padding-left: 108px; */
+    height: 30px;
+    cursor: pointer;
+    float: right;
 }
 
 .footer .copyright p a:hover {
     color: #0796fe;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
         text-align: center;
     }
+
+    .footer .container img {
+        
+float: unset;
+        
+margin: 0 auto;
+        
+display: block;
+        
+margin-top: 8px;
+    }
 }
+ 
