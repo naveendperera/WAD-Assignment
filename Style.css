@@ -591,7 +591,7 @@ float: left;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #057de61c;
+    background-color: #057de61c !important;
 }
 
 .about .section-header {
@@ -763,7 +763,9 @@ float: left;
 
 .service .service-item a {
     position: relative;
-    font-size: 16px;
+    height: 70px;
+    width: 70px;
+    font-size: 60px !important;
     color: #0796fe;
     transition: .3s;
 }
