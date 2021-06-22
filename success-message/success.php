@@ -29,7 +29,12 @@
          </center>
      </div>
 
- 
+     <script>
+     setTimeout(function() {
+         window.location.href = '../my.html'; // the redirect goes here
+
+     }, 2000); // 5 seconds
+     </script>
 
 
 
