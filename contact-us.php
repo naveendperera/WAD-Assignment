@@ -20,7 +20,17 @@
                     <i class="fa fa-phone"> </i><span class="form-info"> +37 1234567 </span><br>
                     <i class="fa fa-envelope"></i><span class="form-info"> maneesha@gmail.com</span>
                 </div>
-                 
+                <div>
+                    <form action="contact-us.php" method="POST">
+                        <input type="text" name="name" placeholder="Enter name" required><br>
+                        <input type="Email" name="email" placeholder="Enter Email" required><br>
+                        <input type="text" name="subject" placeholder="Enter The subject"><br>
+                        <textarea name="message" placeholder="Enter your mrssage here" rows="5" required></textarea><br>
+                        <div></div>
+                        <!-- <button class="submit">Send Now</button> -->
+                        <input type="submit" name="submit" value="Send Now">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
