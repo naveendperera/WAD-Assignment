@@ -1,3 +1,32 @@
+<!-- databse - charity
+user - maneesha
+host - localhost
+password - m12345
+table - contacts
+columns - id,name,email,subject,message -->
+
+<?php
+// database details
+$servername = "localhost";
+$username = "maneesha";
+$password = "m12345";
+$dbname = "charity";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+ 
+ 
+}
+
+mysqli_close($conn);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
