@@ -19,9 +19,29 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
- 
- 
+ // check if user submit the form
+if(isset($_POST['submit'])){
+    // getting user inserted values to form
+    $name = mysqli_real_escape_string($conn , $_POST['name']);
+    $email = mysqli_real_escape_string($conn , $_POST['email']);
+    $subject = mysqli_real_escape_string($conn , $_POST['subject']);
+    $message = mysqli_real_escape_string($conn , $_POST['message']);
+    
+    // sql query to add data to databse
+    $sql = "INSERT INTO contacts(name,email,subject,message) VALUES ('$name' , '$email' , '$subject' , '$message')";
+
+    // save to db and check
+    if(mysqli_query($conn , $sql)){
+        // success
+         
+        
 }
+else{
+echo 'Query Error' . mysqli_server($conn);
+}
+}
+ 
+ 
 
 mysqli_close($conn);
 
