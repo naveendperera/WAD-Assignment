@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
     // save to db and check
     if(mysqli_query($conn , $sql)){
         // success
-         
+        header('location:success-message/success.php');
         
 }
 else{
