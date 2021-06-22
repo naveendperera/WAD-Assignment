@@ -119,3 +119,15 @@ body {
     color: #fff;
     cursor: pointer;
   }
+  /* media queries */
+@media (max-width: 768px) {
+    #contact-section .contact-form {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    #contact-section .submit {
+      width: 60%;
+    }
+  }
+  
