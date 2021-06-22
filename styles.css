@@ -1,0 +1,44 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  #contact-section {
+    background: linear-gradient(rgba(116, 114, 114, 0.3), rgba(73, 72, 72, 0.5)),
+      url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+    /* border: 2px solid rgb(253, 26, 121); */
+  
+    border-radius: 50px;
+    padding-bottom: 5%;
+    padding-top: 4%;
+  }
+  
+  #contact-section .container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: rgb(238, 235, 235);
+    letter-spacing: 3px;
+  }
+  
+  #contact-section .container p {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  
