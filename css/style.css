@@ -1,56 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
-*{
+body {margin: 0;}
+
+ul.topnav {
+  position: sticky;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #333;
 }
 
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-}
-.about{
-    background: url(image1.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: black;
-    overflow: hidden;
-    padding: 310px 0;
-}
-.inner-section{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 140px;
-}
-.inner-section h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-.text{
-    font-size: 17px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
+ul.topnav li {float: left;}
 
-.wrapper{
-  margin-top: 50px;
-}
-
-.wrapper h1{
-  font-family: 'Allura', cursive;
-  font-size: 52px;
-  margin-bottom: 60px;
+ul.topnav li a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-
 .team{
   display: flex;
   justify-content: center;
@@ -100,52 +68,27 @@ body{
   padding: 5px;
 }
 
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   font-size: 20px;
   font-family: calibri;
   width: 100%;
-  background-color:     #FFFFFF;
-  color: black;
+  background-color:     BLACK;
+  color: WHITE;
   text-align: center;
 }
 
-@media screen and (max-width:1200px){
-    .inner-section{
-        padding: 80px;
-    }
-    .wrapper{
-        padding: 80px;
-    }
-
-}
-@media screen and (max-width:1000px){
-    .about{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-section{
-        width: 100%;
-    }
-    .wrapper{
-        padding: 80px;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about{
-        padding: 0;
-    }
-    .inner-section{
-        padding: 60px;
-    }
-    .wrapper{
-        padding: 80px;
-    }
-    
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
