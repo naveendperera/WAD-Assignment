@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
-body {margin: 0;}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {margin: 0;
+}
 
 ul.topnav {
   position: sticky;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
   background-color: #333;
 }
@@ -19,6 +26,47 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+.about{
+    background: url(img/image1.jpg) no-repeat center;
+    background-size: 150%;
+    background-color: black;
+    overflow: hidden;
+    padding: 310px 0;
+}
+.inner-section{
+    width: 50%;
+    height: 50%;
+    float: center;
+    background-color: #fdfdfd;
+    padding: 140px;
+}
+
+.inner-section h1{
+  text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+  align-content: center;
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.wrapper{
+  margin-top: 50px;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .team{
   display: flex;
   justify-content: center;
@@ -92,3 +140,4 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+
