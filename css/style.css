@@ -28,7 +28,7 @@ ul.topnav li a {
 }
 .about{
     background: url(img/02.jpg) no-repeat center;
-    background-size: 150%;
+    background-size: 100%;
     background-color: black;
     overflow: hidden;
     padding: 310px 0;
