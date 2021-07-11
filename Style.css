@@ -703,16 +703,6 @@ float: left;
     color: #0796fe;
     transition: .3s;
 }
-/*
-.service .service-item a::after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 2px;
-    bottom: -3px;
-    left: 10%;
-    background: #0796fe;
-}*/
 
 .service .service-item:hover a.btn {
     color: #092a49;
