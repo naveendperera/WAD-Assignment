@@ -710,7 +710,7 @@ float: left;
     border-color: #1d2434;
 }
 
-/***************************************** About Us CSS 2222*****************************************/
+/***************************************** Vision CSS *****************************************/
 
 #about {
     position: relative;
@@ -807,7 +807,7 @@ float: left;
     font-weight: 300;
 }
 
-/***************************************** Service CSS 222******************************************/
+/***************************************** Item CSS ******************************************/
 
 #services {
     padding: 60px 0 30px 0;
@@ -840,14 +840,11 @@ float: left;
     transition: ease-out 0.5s;    
 -webkit-transition: ease-out 0.5s;    
 -moz-transition: ease-out 0.5s;
-    /* left: 0; */
     transition-delay: .2s;
 }
 
 #services .service-col:hover .service-detail {
-    /* transition: .5s; */
     left: 0;
-    /* transition-delay: .2s; */
 }
 
 #services .service-icon {
