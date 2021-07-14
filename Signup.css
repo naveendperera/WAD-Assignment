@@ -1,0 +1,675 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #202C45;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #202C45;
+    transition: .3s;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #062847;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 90%;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #0796fe;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #092a49;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #092a49;
+}
+
+.back-to-top:hover i {
+    color: #0796fe;
+}
+
+@media (min-width: 992px) {
+    .mt-125 {
+        margin-top: 125px;
+    }
+}
+
+/****************************************** Nav Bar CSS *****************************************/
+
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+    background-color: #062847;
+}
+#Nav-Bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    background-color: #062847;
+    background: rgb(9 42 73 / 50%)!important;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    transition: .5s;
+    background-color: #062847;
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    left: 200p;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+}
+
+#Nav-Bar #navbarCollapse a{
+    
+font-weight: 600;
+    
+font-size: 15px;
+    
+box-sizing: border-box;
+    
+display: inline-block;
+    
+line-height: 44px;
+    
+float: left;
+    
+padding: 0 15px;
+    
+color: #fff;
+    
+font-weight: 600;
+    
+transition: ease-out 0.5s;
+    
+-webkit-transition: ease-out 0.5s;
+    
+-moz-transition: ease-out 0.5s;
+}
+
+#Nav-Bar #navbarCollapse #post-ad a{
+    color: #000;
+}
+
+.navbar-brand #donation.lk{
+    position: absolute;
+    margin: 0;
+    padding-right: 5000px;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+.navbar-nav .nav-item .nav-link a{
+    color: #000000;
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active,
+
+{
+    padding: 10px 10px 8px 10px;
+    
+    text-align: inline;
+    color: #ffffff ;
+}
+.navbar-dark .navbar-nav button #post-ad {
+    position: absolute;
+    padding: 100px;
+}
+
+#navbarCollapse {
+    
+display: inline-block!important;
+}
+.navbar-nav{
+    /* padding-left: 372px; */
+    float: right;
+    display: inline-block;
+    margin: 0;
+    /* width: 100%; */
+    margin-right: unset!important;
+    margin-left: unset!important;
+    position: relative;
+}
+.navbar-nav li {
+    
+display: inline-block;
+    
+float: left;
+}
+
+.navbar-nav li:hover a {color: #0796fe!important;font-weight: 600!important;}
+.navbar-nav li a {
+    
+}
+#post-ad{
+    padding-top: 0px ;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #3F69AA;
+    transition: none;
+    
+}
+#post-ad {
+    padding: 10px 30px 12px 30px;
+    text-align: center; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #E81C2E;
+    border: none;
+    border-radius: 60px;
+    box-shadow: inset 0 0 0 0 #202C45;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    z-index: 9999;
+}
+
+#post-ad:hover {
+    color: #E81C2E;
+    background: #202C45;
+    box-shadow: inset 200px 0 0 0 #202C45;
+    z-index: 9999;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 35px;
+        padding: 20px 0;
+        background: rgba(9, 42, 73, .2)!important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #3F69AA !important;
+    }
+    
+    .page .navbar {
+        background: #3F69AA !important;
+    }
+    
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #3F69AA !important;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px) {
+ 
+ #navbarCollapse {
+     display: none!important;
+     position: absolute;
+     max-width: 300px;
+     width: 100%;
+     right: 0;
+     top: 55px;
+     background: rgb(9 42 73 / 50%)!important;
+ }
+
+  #navbarCollapse.show {
+     display: inline-block!important;
+ }
+
+ .navbar .container{
+     position:relative;
+ }
+
+
+  #navbarCollapse .navbar-nav {
+    padding: 0 20px;
+}
+
+  #navbarCollapse .navbar-nav li{  
+    width: 100%;
+    border-bottom: 1px solid #ffffff0d;   
+    padding: 5px 0;
+ }
+
+  #navbarCollapse .navbar-nav li a { 
+    padding: 0 15px!important; 
+    line-height: 34px!important;
+ }
+
+ #navbarCollapse .navbar-nav li:last-child {
+     border-bottom:0;
+ }
+ 
+}
+
+
+/**************************************** Signup CSS ****************************************/
+.signup{
+    padding-top: 110px;
+}
+.hed1{
+    padding-top: 140px;
+}
+.hed1 h3 {
+    
+    color: #3754fc;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 80;
+    text-align: center;
+    
+
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Set a style for all buttons */
+
+#signbt {
+
+        position: relative;
+        margin-top: 15px;
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #3F69AA;
+        border: 2px solid #3F69AA;
+        border-radius: 50px;
+        background: none;
+        transition: .3s;
+    }
+    
+    #signbt:hover {
+        color: #ffffff;
+        background: #3F69AA;
+    }
+button{
+    padding-left: 200px;
+    
+}
+  
+  /* Extra styles for the cancel button */
+  .clearfix button{
+        position: absolute;
+        height: 50px;
+        width: 15%;
+        padding: 8px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3F69AA; 
+        float: left !important;
+        border-radius: 50px;
+        border: 2px solid #3F69AA;
+        transition: .3s;
+    }
+    
+    .clearfix :hover {
+        color: #ffffff;
+        background: #3F69AA;
+    }
+.sign-up-submit{
+        float: left;
+        padding-bottom: 20px;
+        padding-left: 1000px;
+        
+    }
+
+  
+  /* Float cancel and signup buttons and add an equal width */
+
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+  /**************************************** Footer CSS *****************************************/
+
+.footer {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 50px;
+    background: #092a49;
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2::after,
+.footer .footer-link h2::after,
+.footer .footer-newsletter h2::after {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #096ec0;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #0796fe;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+    color: #ffffff;
+}
+.footer-contact p a {
+    color: #ffffff;
+}
+
+.footer .footer-contact a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-contact a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-contact a:hover {
+    color: #0796fe;
+    letter-spacing: 1px;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+}
+
+.footer .footer-social a i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #092a49;
+}
+
+.footer .footer-social a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-social a:hover i {
+    color: #999999;
+}
+
+.footer .footer-newsletter .form {
+    position: relative;
+    width: 100%;
+}
+
+.footer .footer-newsletter input {
+    height: 60px;
+    border: 2px solid #1d2434;
+    border-radius: 50px;
+}
+
+.footer .footer-newsletter .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 44px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3F69AA; 
+    border-radius: 50px;
+    border: 2px solid #3F69AA;
+    transition: .3s;
+}
+
+.footer .footer-newsletter .btn:hover {
+    color: #ffffff;
+    background: #3F69AA;
+}
+
+.footer .copyright {
+    padding: 0 10px;
+}
+
+.footer .copyright .row {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #999999;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #ffffff;
+}
+
+.footer .container  {
+    position: relative;
+}
+
+.footer .container img {
+    margin-top: 0px;
+    /* padding-left: 108px; */
+    height: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+.footer .copyright p a:hover {
+    color: #0796fe;
+}
+
+@media (max-width: 767px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .footer .container img {
+        
+float: unset;
+        
+margin: 0 auto;
+        
+display: block;
+        
+margin-top: 8px;
+    }
+}
+ 
