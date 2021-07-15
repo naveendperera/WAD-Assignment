@@ -574,6 +574,11 @@ float: left;
 .footer .container  {
     position: relative;
 }
+#paypal img {
+    float: right;
+    width: 90%;
+    height: 50%;
+}
 
 .footer .container img {
     margin-top: 0px;
@@ -605,4 +610,5 @@ display: block;
 margin-top: 8px;
     }
 }
+ 
  
