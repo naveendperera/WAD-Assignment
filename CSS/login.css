@@ -1,0 +1,469 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #202C45;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #202C45;
+    transition: .3s;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #062847;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 90%;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #0796fe;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #092a49;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #092a49;
+}
+
+.back-to-top:hover i {
+    color: #0796fe;
+}
+
+@media (min-width: 992px) {
+    .mt-125 {
+        margin-top: 125px;
+    }
+}
+
+
+/***************************************** Login form*****************************************/
+
+.about {
+    position: relative;
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: #057de61c !important;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-weight: 600;
+}
+
+.about .about-img {
+    position: relative;
+    width: 250%;
+    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    transition: .5s;
+    padding-top: 0px;
+    float: right;
+    padding-left: 800px;
+}
+
+.about .about-img::after {
+    position: absolute;
+    content: "";
+    top: 60px;
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    background: transparent;
+    z-index: 1;
+}
+
+.about .about-img-1 {
+    position: relative;
+    
+}
+
+.about .about-img-2 {
+    position: absolute;
+    height: 100%;
+    height: 100%;
+    top: 300px;
+    left: 300px;
+    width: 50%;
+    z-index: 1;
+}
+#loginf h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 80px;
+}
+.login-form{
+    text-align: center;
+}
+.Usname input{
+    height: 40px;
+    width: 300px;
+    border: 2px solid #3F69AA;
+    border-radius: 50px;
+    padding-left: 15px;
+}
+.Usname input:hover{
+    border: 2px solid #3F69AA;
+    border-radius: 50px;
+}
+.Usname{
+    padding-bottom: 20px;
+}
+.Upass input{
+    height: 40px;
+    width: 300px;
+    border: 2px solid #3F69AA;
+    border-radius: 50px;
+    padding-left: 15px;
+}
+.Upass{
+    padding-bottom: 5px;
+}
+.Ucheckb{
+    padding-left: 80px;
+}
+
+.logingbt{
+    padding-left: 90px;
+    padding-bottom: 5px;
+}
+.fpass{
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+#signup1{
+    padding-left: 80px;
+}
+.logingbt{
+    margin-bottom: 20px;
+}
+.logingbt input[type="submit"]{
+    padding: 8px 30px 8px 30px;
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 600;
+    width: 250px;
+    height: 40px;
+    padding-top: 5px;
+    color: #ffffff;
+    background: #E81C2E;
+    border: none;
+    border-radius: 60px;
+    box-shadow: inset 0 0 0 0 #3F69AA;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    z-index: 9999;
+}
+.logingbt input[type="submit"]:hover {
+    color: #ffffff;
+    background: #3F69AA;
+    box-shadow: inset 200px 0 0 0 #3F69AA;
+    z-index: 9999;
+}
+.about .about-img-1 img,
+.about .about-img-2 img {
+    position: relative;
+    width: 100%;
+}
+
+.about .about-text p {
+    font-size: 16px;
+}
+.signup{
+    font-size: 16px;
+    padding-left: 60px;
+}
+
+#signup1 a{
+    position: relative;
+    margin-top: 0px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3F69AA;
+    border: 2px solid #3F69AA;
+    border-radius: 50px;
+    background: none;
+    transition: .3s;
+    
+}
+
+.error-msg{
+    color: red;
+    text-align: center;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#signup1 a:hover {
+    color: #ffffff;
+    background: #3F69AA;
+    border: 2px solid #3F69AA;
+    border-color: #ffffff;
+}
+
+
+#Donate-now #Donate-now1:hover {
+    color: #E81C2E;
+    background: #202C45;
+    box-shadow: inset 200px 0 0 0 #202C45;
+    z-index: 9999;
+}
+
+@media (max-width: 767.98px) {
+    .about .about-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+/**************************************** Footer CSS *****************************************/
+
+.footer {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 50px;
+    background: #092a49;
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2::after,
+.footer .footer-link h2::after,
+.footer .footer-newsletter h2::after {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #096ec0;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #0796fe;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+    color: #ffffff;
+}
+.footer-contact p a {
+    color: #ffffff;
+}
+
+.footer .footer-contact a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-contact a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-contact a:hover {
+    color: #0796fe;
+    letter-spacing: 1px;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+}
+
+.footer .footer-social a i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #092a49;
+}
+
+.footer .footer-social a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-social a:hover i {
+    color: #999999;
+}
+
+.footer .footer-newsletter .form {
+    position: relative;
+    width: 100%;
+}
+
+.footer .footer-newsletter input {
+    height: 60px;
+    border: 2px solid #1d2434;
+    border-radius: 50px;
+}
+
+.footer .footer-newsletter .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 44px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3F69AA; 
+    border-radius: 50px;
+    border: 2px solid #3F69AA;
+    transition: .3s;
+}
+
+.footer .footer-newsletter .btn:hover {
+    color: #ffffff;
+    background: #3F69AA;
+}
+
+.footer .copyright {
+    padding: 0 10px;
+}
+
+.footer .copyright .row {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #999999;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #ffffff;
+}
+
+.footer .container  {
+    position: relative;
+}
+#paypal img {
+    float: right;
+    width: 90%;
+    height: 50%;
+}
+
+.footer .container img {
+    margin-top: 0px;
+    /* padding-left: 108px; */
+    height: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+.footer .copyright p a:hover {
+    color: #0796fe;
+}
+
+@media (max-width: 767px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .footer .container img {
+        
+float: unset;
+        
+margin: 0 auto;
+        
+display: block;
+        
+margin-top: 8px;
+    }
+}
+ 
